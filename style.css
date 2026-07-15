@@ -113,14 +113,6 @@ nav a:focus-visible {
     gap: 14px;
 }
 
-.menu-button {
-    display: none;
-    padding: 4px;
-    color: var(--color-ink);
-    font-size: 1.9rem;
-    line-height: 1;
-}
-
 .btn-login {
     color: var(--color-ink);
     padding: 10px 16px;
@@ -764,80 +756,64 @@ footer {
 }
 
 @media (max-width: 600px) {
-    header,
-    main {
-        width: min(100% - 32px, 1280px);
-    }
-
-    header {
-        flex-wrap: nowrap;
-        padding: 16px 0;
-    }
-
-    header nav,
-    .auth-buttons {
-        display: none;
-    }
-
-    .menu-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: auto;
-    }
-
-    header.menu-open {
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    header.menu-open nav {
-        display: flex;
-        order: 3;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
-        padding: 18px;
-        border: 1px solid var(--color-border);
-        border-radius: 12px;
-        background: #FFFFFF;
-    }
-
-    header.menu-open .auth-buttons {
-        display: flex;
-        order: 4;
-        width: 100%;
-        justify-content: flex-start;
+    body {
+        background: rgb(177, 188, 248);
     }
 
     .hero {
-        gap: 28px;
-        padding: 30px 0 48px;
-    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 35px;
+    width: 100%;
+}
 
-    .hero h1 {
-        font-size: clamp(2.8rem, 13vw, 3.75rem);
-    }
+.btn-primary {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 16px;
+    background: var(--color-primary);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 16px 36px rgba(22, 163, 74, 0.22);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+    nav {
+    display: none;
+    align-items: center;
+    gap: 32px;
+}
+.btn-link {
+    justify-content: center;
+}
+.btn-link {
+    align-items: center;
+    width: 100%;
+}
 
     .hero-actions {
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-    }
+    flex-direction: column;
+    align-items: left;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+    .btn-primary {
+    /* flex-direction: column; */
+    width: 150%;
+    padding: 7px;
+}
 
-    .hero-actions .btn-primary,
-    .hero-actions .btn-link {
-        width: 100%;
-        padding: 14px 20px;
-    }
+.menu-button{
+    font-size: 35px;
+    display: inline-block;
+}
 
-    .activity-card {
-        padding: 16px;
-    }
-
-    .activity-card-header {
-        margin-bottom: 18px;
-    }
+.auth-buttons {
+    display: none;
+}
 
 }
