@@ -760,7 +760,7 @@ footer {
 
 @media (max-width: 600px) {
     body {
-        /* background: rgb(177, 188, 248); */
+        background: rgb(239, 240, 243);
     }
 
     .hero {
