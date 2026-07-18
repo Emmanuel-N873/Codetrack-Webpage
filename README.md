@@ -1,4 +1,4 @@
-# CodeTrack Landing Page
+# CodeTrack - Emmanuel Nwauzobilom
 
 A responsive landing page for CodeTrack, a habit-building app for people learning to code.
 

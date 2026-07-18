@@ -546,10 +546,13 @@ main {
 }
 
 .cta-heatmap {
-    display: grid;
-    grid-template-columns: repeat(18, 10px);
-    gap: 3px;
-    margin-bottom: 31px;
+    display: none;
+}
+
+.cta-visual {
+    display: block;
+    width: min(445px, 100%);
+    margin: 0 auto 31px;
 }
 
 .cta-heatmap span {
@@ -757,7 +760,7 @@ footer {
 
 @media (max-width: 600px) {
     body {
-        background: rgb(177, 188, 248);
+        /* background: rgb(177, 188, 248); */
     }
 
     .hero {
@@ -801,11 +804,6 @@ footer {
     gap: 14px;
     flex-wrap: wrap;
 }
-    .btn-primary {
-    /* flex-direction: column; */
-    width: 150%;
-    padding: 7px;
-}
 
 .menu-button{
     font-size: 35px;
@@ -816,4 +814,39 @@ footer {
     display: none;
 }
 
+.cta-section .btn-primary {
+    width: 80%;
+}
+
+.hero {
+     padding: 2px;
+}
+.btn-primary {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 12px 22px;
+    width: 100%;
+}
+
+/* Phone-sized hero actions */
+@media (max-width: 600px) {
+    .hero-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-link {
+        width: 100%;
+        min-height: 52px;
+        justify-content: center;
+        flex-direction: row;
+        gap: 8px;
+        padding: 14px 18px;
+    }
+}
 }
