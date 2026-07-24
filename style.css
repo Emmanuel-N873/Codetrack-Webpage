@@ -839,6 +839,75 @@ footer {
         gap: 12px;
     }
 
+
+/* Small-screen stats card: compact, centered, overlapping badges */
+@media (max-width: 600px) {
+    .statistics {
+        padding: 16px 12px 24px;
+    }
+
+    .social-proof {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid #E8EEF2;
+        background: #F8FBF9;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+        max-width: 380px;
+        margin: 12px auto;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .logo-badge {
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        margin-left: -8px;
+        border: 2px solid #FFFFFF;
+        font-size: 0.72rem;
+        font-weight: 700;
+    }
+
+    .logo-badge:first-child {
+        margin-left: 0;
+    }
+
+    .social-proof > p:not(.stat-highlight) {
+        margin-left: 12px;
+        margin-right: 8px;
+        color: #0F172A;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .stat-highlight {
+        margin-left: auto;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    .stat-highlight strong {
+        color: var(--color-primary);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 1.6rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+    }
+
+    .stat-highlight span {
+        color: var(--color-muted);
+        font-size: 0.85rem;
+    }
+}
     .hero-actions .btn-primary,
     .hero-actions .btn-link {
         width: 100%;
@@ -849,4 +918,13 @@ footer {
         padding: 14px 18px;
     }
 }
+.social-proof {
+    padding: 12px;
+    margin-left: 0px;
+    /* margin-right: 0px; */
+    border: 10px;
+    width: 100%;
+    padding: 18px 20px;
+}
+
 }
