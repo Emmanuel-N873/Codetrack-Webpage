@@ -455,11 +455,11 @@ main {
     transition: transform 0.65s ease, box-shadow 0.25s ease;
 }
 
-.step-card:hover,
+/* .step-card:hover,
 .step-card:focus-within {
     transform: rotate(360deg);
     box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
-}
+} */
 
 .step-number {
     color: #16A34A;
@@ -843,7 +843,8 @@ footer {
 /* Small-screen stats card: compact, centered, overlapping badges */
 @media (max-width: 600px) {
     .statistics {
-        padding: 16px 12px 24px;
+    padding: 16px 12px 24px;
+    }
     }
 
     .social-proof {
@@ -917,7 +918,6 @@ footer {
         gap: 8px;
         padding: 14px 18px;
     }
-}
 .social-proof {
     padding: 12px;
     margin-left: 0px;
@@ -926,5 +926,4 @@ footer {
     width: 100%;
     padding: 18px 20px;
 }
-
 }
