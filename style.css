@@ -890,7 +890,7 @@ footer {
     }
 
     .stat-highlight {
-        margin-left: auto;
+        /* margin-left: auto; */
         display: flex;
         align-items: baseline;
         gap: 8px;
@@ -925,5 +925,6 @@ footer {
     border: 10px;
     width: 100%;
     padding: 18px 20px;
+    align-items: baseline;
 }
 }

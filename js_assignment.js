@@ -96,11 +96,21 @@ console.log(strict)
 // While strict equality compares both the value and the data type without changing them.
 
 //Question 10
-const e = 7;
-const f = "7";
-const notLoose = e != f;
-const notStrict = e !== f;
+console.log(num != str) //negloose
+console.log(num !== str) //negstrict
+//The negloose shows that false comfirming that  both are not different
+//The negstrict shows true confirming that both values are actually different
 
-console.log(notLoose);
-console.log(notStrict);
+//Question 11
+const IsRaining = true;
+const IsWeekend = false;
+console.log(!IsRaining)
+console.log(!IsWeekend)
+//Bringing in a negation equation tends to falseify and already established equation that is void of ambiguity, hence the result shows the opposit of the stated equation. IsRaining is said to be equal to true(established), introducing the !(neg) tends to dispute that. So it returns as false(which is the opposit of the fact). Same goes for IsWeekend.
 
+//Question 12
+const correctPin = 1234;
+const enteredPin = "1234";
+const correct = correctPin === enteredPin;
+console.log(correct)
+//The strict equality compares the 2 variables: (correctPin & enteredPin) and noted it as false as both values are not all the same.
