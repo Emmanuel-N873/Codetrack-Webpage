@@ -32,7 +32,14 @@
 function greet(name, lastname) {
     console.log("Hello, " + name + " " + lastname);
 }
-
 greet("Emmanuel", "Nwauzobilom");
 greet("Peculiar", "Otu");
+
+//Calculating a value
+function square(number) {
+    return number * number;
+}
+
+let number = square(2);
+console.log(number);
 
