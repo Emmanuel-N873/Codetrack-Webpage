@@ -110,7 +110,7 @@ const newProduct = {
   active: true,
   };
 
-  products.push(newProduct);
+  // products.push(newProduct);
 
   //ForEach
 //Pinting every value
@@ -137,9 +137,10 @@ const newProduct = {
 // console.log(availableProducts);
 
 //FIND
-const selectedProductId = 4
+// const selectedProductId = 4
 
-const selectedProduct = products.find((product) => {
-  return product.id === selectedProductId;
-});
-console.log(selectedProduct);
+// const selectedProduct = products.find((product) => {
+//   return product.id === selectedProductId;
+// });
+// console.log(selectedProduct);
+
