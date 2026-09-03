@@ -27,6 +27,7 @@
 //Event driven manipulation
 const heroPrimaryButton = document.getElementById("hero_pri");
 const mainTitle = document.getElementById("mainTitle");
+const heroImg = document.getElementById("hero_Img");
 
 heroPrimaryButton.addEventListener("click", () => {
     //Button has been clicked
@@ -36,6 +37,9 @@ heroPrimaryButton.addEventListener("click", () => {
 
     mainTitle.textContent = "I Love JavaScript";
 
+    heroImg.style.display = "none";
+
     //Alert the user that the button has been clicked.
     alert("Something has changed on the page. Check it out!");
 });
+
