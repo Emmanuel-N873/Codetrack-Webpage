@@ -67,4 +67,8 @@ if (password && password.length < 6) {
 return isValid;
 }
 
-validateLogin();
+//Fetching data from the server and displaying it on the front end
+const loginWithFetch = async (credentials) => {
+
+}
+
